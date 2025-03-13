@@ -1,8 +1,48 @@
 body {
   background-color: #d5e1ef;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  font-style: normal;
+  text-align: center;
 }
 
 .class {
   height: 499px;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
+  padding-bottom: 1rem;
+  border-radius: 20px;
+  background-color: white;
+  position: fixed;
+  margin: auto;
+  inset: 0;
+}
+
+img {
+  /* padding-left: 16px; */
+  padding-top: 16px;
+  box-sizing: border-box;
+}
+
+.text {
+  /* text-align: center; */
+  line-height: 120%;
+}
+
+.mintext {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  line-height: 140%;
+  width: 256px;
+  padding-left: 30px;
+}
+
+h3 {
+  color: #1f314f;
+}
+
+p {
+  color: #68778d;
 }
