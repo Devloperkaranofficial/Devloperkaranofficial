@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4d04e;
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.card {
+  background-color: #ffffff;
+  max-width: 384px;
+  padding: 1.5rem;
+  margin: 1rem;
+  position: relative;
+  border-radius: 1.25rem;
+  outline: 1px solid #111111;
+}
+
+.card ::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.card .learning {
+  background-color: #f4d04e;
+  width: min-content;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  font-weight: 800;
+  border-radius: 0.25rem;
+}
+
+.card .date {
+  margin-top: 1rem;
+}
+
+.card h1 {
+  margin-top: 1rem;
+}
+
+.card h1 a {
+  color: #111111;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.card h1 a:hover {
+  color: #f4d04e;
+}
+
+.card .description {
+  color: #6b6b6b;
+  line-height: 1.5;
+}
+
+.card .author {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card .author img {
+  width: 32px;
+}
+
+.card .author .name {
+  font-weight: 800;
+}
+
+@media (max-width: 375px) {
+  .card h1 a {
+    font-size: 1.25rem;
+  }
+}
